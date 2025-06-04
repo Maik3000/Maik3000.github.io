@@ -11741,4 +11741,8 @@ html {
   height: auto;      /* mantiene proporción */
   }
 
+  a.text-primary:hover {
+    color: #0d6efd;
+    text-decoration: underline;
+  }
 }
