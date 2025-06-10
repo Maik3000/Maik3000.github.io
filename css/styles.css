@@ -11660,6 +11660,10 @@ html {
   width: 120px;      /* ancho deseado */
   height: auto;      /* mantiene proporción */
   }
+  .project-image{
+    width: 200px;      /* ancho deseado */
+    height: auto; 
+  }
 }
 @media (min-width: 768px) {
   .profile {
@@ -11736,13 +11740,35 @@ html {
     left: -2vw;
   }
 
-  .certifications-img {
-  width: 120px;      /* ancho deseado */
-  height: auto;      /* mantiene proporción */
+  .project-image{
+    width: 200px;      /* ancho deseado */
+    height: auto; 
   }
 
   a.text-primary:hover {
     color: #0d6efd;
     text-decoration: underline;
+  }
+
+  @media (max-width: 576px) {
+  .project-card-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .project-text {
+    padding: 1.5rem !important;
+    text-align: left;
+  }
+
+  .project-image {
+    padding: 1rem !important;
+    width: 100%;
+  }
+
+  .project-image img {
+    width: 100%;
+    height: auto;
+  }
   }
 }
